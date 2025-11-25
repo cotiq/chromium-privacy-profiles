@@ -1,0 +1,31 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome]
+
+; Telemetry / reporting
+"MetricsReportingEnabled"=dword:00000000
+"CloudReportingEnabled"=dword:00000000
+
+; Password manager / autofill
+"PasswordManagerEnabled"=dword:00000000
+"PasswordLeakDetectionEnabled"=dword:00000000
+"AutofillCreditCardEnabled"=dword:00000000
+"AutofillAddressEnabled"=dword:00000000
+
+; Strict default permissions (2 = Block)
+"DefaultGeolocationSetting"=dword:00000002
+"DefaultNotificationsSetting"=dword:00000002
+"DefaultSensorsSetting"=dword:00000002
+"DefaultLocalFontsSetting"=dword:00000002
+"DefaultSerialGuardSetting"=dword:00000002
+"DefaultWebBluetoothGuardSetting"=dword:00000002
+"DefaultWebUsbGuardSetting"=dword:00000002
+
+; Cookies / tracking
+"BlockThirdPartyCookies"=dword:00000001
+
+; WebRTC IP handling
+"WebRtcIPHandlingPolicy"="disable_non_proxied_udp"
+
+; Sync
+"SyncDisabled"=dword:00000001

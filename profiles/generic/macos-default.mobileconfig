@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>PayloadType</key><string>Configuration</string>
+  <key>PayloadVersion</key><integer>1</integer>
+  <key>PayloadIdentifier</key><string>com.generic.chromium.privacy.default</string>
+  <key>PayloadUUID</key><string>AF5CF88B-9C6D-4C91-8C48-9F566445C9C3</string>
+  <key>PayloadDisplayName</key><string>Chromium Privacy Profile (Default)</string>
+  <key>PayloadDescription</key>
+  <string>General-purpose privacy hardening for Chromium-based browsers using Chrome-style policies. No extensions are forced or installed.</string>
+  <key>PayloadScope</key><string>System</string>
+
+  <key>PayloadContent</key>
+  <array>
+    <dict>
+      <key>PayloadType</key><string>com.google.Chrome</string>
+      <key>PayloadVersion</key><integer>1</integer>
+      <key>PayloadIdentifier</key><string>com.generic.chromium.privacy.default.payload</string>
+      <key>PayloadUUID</key><string>6E2A4925-9E0B-4D29-8D7F-0C24E4301F3F</string>
+      <key>PayloadEnabled</key><true/>
+
+      <!-- Telemetry / reporting -->
+      <key>MetricsReportingEnabled</key><false/>
+      <key>CloudReportingEnabled</key><false/>
+
+      <!-- Password manager / autofill -->
+      <key>PasswordManagerEnabled</key><false/>
+      <key>PasswordLeakDetectionEnabled</key><false/>
+      <key>AutofillCreditCardEnabled</key><false/>
+      <key>AutofillAddressEnabled</key><false/>
+
+      <!-- Strict default permissions (2 = Block) -->
+      <key>DefaultGeolocationSetting</key><integer>2</integer>
+      <key>DefaultNotificationsSetting</key><integer>2</integer>
+      <key>DefaultSensorsSetting</key><integer>2</integer>
+      <key>DefaultLocalFontsSetting</key><integer>2</integer>
+      <key>DefaultSerialGuardSetting</key><integer>2</integer>
+      <key>DefaultWebBluetoothGuardSetting</key><integer>2</integer>
+      <key>DefaultWebUsbGuardSetting</key><integer>2</integer>
+
+      <!-- Cookies / tracking -->
+      <key>BlockThirdPartyCookies</key><true/>
+
+      <!-- WebRTC IP handling -->
+      <key>WebRtcIPHandlingPolicy</key>
+      <string>disable_non_proxied_udp</string>
+
+      <!-- Sync -->
+      <key>SyncDisabled</key><true/>
+    </dict>
+  </array>
+</dict>
+</plist>
