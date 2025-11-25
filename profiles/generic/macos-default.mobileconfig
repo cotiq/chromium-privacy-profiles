@@ -9,7 +9,7 @@
   <key>PayloadUUID</key><string>AF5CF88B-9C6D-4C91-8C48-9F566445C9C3</string>
   <key>PayloadDisplayName</key><string>Chromium Privacy Profile (Default)</string>
   <key>PayloadDescription</key>
-  <string>General-purpose privacy hardening for Chromium-based browsers using Chrome-style policies. No extensions are forced or installed.</string>
+  <string>General-purpose privacy hardening for Chromium-based browsers using Chrome-style policies.</string>
   <key>PayloadScope</key><string>System</string>
 
   <key>PayloadContent</key>

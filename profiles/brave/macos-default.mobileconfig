@@ -14,7 +14,7 @@
   <key>PayloadDisplayName</key>
   <string>Brave Privacy Profile</string>
   <key>PayloadDescription</key>
-  <string>General-purpose privacy hardening for Brave. No extensions are forced or installed.</string>
+  <string>General-purpose privacy hardening for Brave.</string>
   <key>PayloadScope</key>
   <string>System</string>
 
