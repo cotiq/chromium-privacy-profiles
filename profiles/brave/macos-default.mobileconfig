@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>PayloadType</key>
+  <string>Configuration</string>
+  <key>PayloadVersion</key>
+  <integer>1</integer>
+  <key>PayloadIdentifier</key>
+  <string>com.brave.privacy.default</string>
+  <key>PayloadUUID</key>
+  <string>4B58F238-FF47-4D25-BB9D-9F6E8C27D452</string>
+  <key>PayloadDisplayName</key>
+  <string>Brave Privacy Profile</string>
+  <key>PayloadDescription</key>
+  <string>General-purpose privacy hardening for Brave. No extensions are forced or installed.</string>
+  <key>PayloadScope</key>
+  <string>System</string>
+
+  <key>PayloadContent</key>
+  <array>
+    <dict>
+      <key>PayloadType</key>
+      <string>com.brave.Browser</string>
+      <key>PayloadVersion</key>
+      <integer>1</integer>
+
+      <key>PayloadIdentifier</key>
+      <string>com.brave.privacy.default.payload</string>
+      <key>PayloadUUID</key>
+      <string>78E5C052-8579-4D6A-A587-F1545DA3FA0F</string>
+      <key>PayloadEnabled</key>
+      <true/>
+
+      <!-- Disable built-in Brave features -->
+      <key>BraveAIChatEnabled</key><false/>
+      <key>BraveRewardsDisabled</key><true/>
+      <key>BraveVPNDisabled</key><true/>
+      <key>BraveNewsDisabled</key><true/>
+      <key>BraveWebDiscoveryEnabled</key><false/>
+      <key>BraveSpeedreaderEnabled</key><false/>
+      <key>BraveTalkDisabled</key><true/>
+      <key>BraveWaybackMachineEnabled</key><false/>
+      <key>TorDisabled</key><true/>
+
+      <!-- Disable all telemetry and reporting -->
+      <key>BraveP3AEnabled</key><false/>
+      <key>BraveStatsPingEnabled</key><false/>
+      <key>MetricsReportingEnabled</key><false/>
+      <key>CloudReportingEnabled</key><false/>
+      <key>HeartbeatEnabled</key><false/>
+      <key>DeviceMetricsReportingEnabled</key><false/>
+      <key>LogUploadEnabled</key><false/>
+
+      <!-- Password manager + autofill off -->
+      <key>PasswordManagerEnabled</key><false/>
+      <key>PasswordLeakDetectionEnabled</key><false/>
+      <key>PasswordSharingEnabled</key><false/>
+      <key>AutofillCreditCardEnabled</key><false/>
+      <key>AutofillAddressEnabled</key><false/>
+
+      <!-- Strict default permission settings -->
+      <key>DefaultGeolocationSetting</key><integer>2</integer>
+      <key>DefaultNotificationsSetting</key><integer>2</integer>
+      <key>DefaultSensorsSetting</key><integer>2</integer>
+      <key>DefaultLocalFontsSetting</key><integer>2</integer>
+      <key>DefaultSerialGuardSetting</key><integer>2</integer>
+      <key>DefaultWebBluetoothGuardSetting</key><integer>2</integer>
+      <key>DefaultWebUsbGuardSetting</key><integer>2</integer>
+
+      <!-- Tracking and privacy -->
+      <key>BlockThirdPartyCookies</key><true/>
+
+      <!-- WebRTC IP leak reduction -->
+      <key>WebRtcIPHandlingPolicy</key>
+      <string>disable_non_proxied_udp</string>
+
+      <!-- Sync disabled -->
+      <key>SyncDisabled</key><true/>
+      <key>BraveSyncUrl</key><string></string>
+    </dict>
+  </array>
+</dict>
+</plist>
