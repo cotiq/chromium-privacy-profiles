@@ -36,9 +36,7 @@
       <key>DefaultNotificationsSetting</key><integer>2</integer>
       <key>DefaultSensorsSetting</key><integer>2</integer>
       <key>DefaultLocalFontsSetting</key><integer>2</integer>
-      <key>DefaultSerialGuardSetting</key><integer>2</integer>
       <key>DefaultWebBluetoothGuardSetting</key><integer>2</integer>
-      <key>DefaultWebUsbGuardSetting</key><integer>2</integer>
 
       <!-- Cookies / tracking -->
       <key>BlockThirdPartyCookies</key><true/>

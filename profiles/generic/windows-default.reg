@@ -17,9 +17,7 @@ Windows Registry Editor Version 5.00
 "DefaultNotificationsSetting"=dword:00000002
 "DefaultSensorsSetting"=dword:00000002
 "DefaultLocalFontsSetting"=dword:00000002
-"DefaultSerialGuardSetting"=dword:00000002
 "DefaultWebBluetoothGuardSetting"=dword:00000002
-"DefaultWebUsbGuardSetting"=dword:00000002
 
 ; Cookies / tracking
 "BlockThirdPartyCookies"=dword:00000001
